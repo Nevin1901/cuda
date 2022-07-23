@@ -1,8 +1,13 @@
 #include <iostream>
+#include <X11/Xlib.h>
+#include <unistd.h>
 
 __global__ void populateVec(int n, float *a, float *b) {
     int index = blockIdx.x * blockDim.x + threadIdx.x;
     int stride = blockDim.x * gridDim.x;
+
+    int index_y = blockIdx.y * blockDim.y + threadIdx.y;
+    int stride_y = blockDim.y * gridDim.y;
 
     for (int i = index; i < n; i+= stride) {
         a[i] = 2;
@@ -20,6 +25,34 @@ __global__ void vecAdd(int n, float *a, float *b, float *c) {
 }
 
 int main() {
+    Display *dpy = XOpenDisplay(0);
+
+    int blackColor = BlackPixel(dpy, DefaultScreen(dpy));
+    int whiteColor = WhitePixel(dpy, DefaultScreen(dpy));
+
+    Window w = XCreateSimpleWindow(dpy, DefaultRootWindow(dpy), 0, 0, 200, 100, 0, blackColor, blackColor);
+
+    XSelectInput(dpy, w, StructureNotifyMask);
+
+    XMapWindow(dpy, w);
+
+    GC gc = XCreateGC(dpy, w, 0, 0);
+
+    XSetForeground(dpy, gc, whiteColor);
+
+    for (;;) {
+        XEvent e;
+        XNextEvent(dpy, &e);
+        if (e.type == MapNotify) {
+            break;
+        }
+    }
+
+    XDrawLine(dpy, w, gc, 10, 60, 180, 20);
+
+    XFlush(dpy);
+
+    sleep(10);
     // int nDevices;
 
     // cudaGetDeviceCount(&nDevices);
