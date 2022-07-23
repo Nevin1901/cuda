@@ -1,14 +1,21 @@
 #include <iostream>
 
 __global__ void add(int n, float *x, float *y) {
-    for (int i = 0; i < n; i++) {
+    int index = blockIdx.x * blockDim.x + threadIdx.x;
+    int stride = blockDim.x * gridDim.x;
+    for (int i = index; i < n; i+= stride) {
         y[i] = x[i] + y[i];
     }
 }
 
-int main(int *argc, char** argv[]) {
+int main(int argc, char* argv[]) {
     int N = 1<<20;
-    std::cout << N << std::endl;
+    int blockSize = 256;
+
+    int numBlocks = (N + blockSize - 1) / blockSize;
+
+    // std::cout << numBlocks << std::endl;
+    // std::cout << N << std::endl;
     float *x, *y;
 
     cudaMallocManaged(&x, N * sizeof(float));
@@ -19,11 +26,14 @@ int main(int *argc, char** argv[]) {
         y[i] = 2.0f;
     }
 
-    add<<<1, 1>>>(N, x, y);
+    add<<<numBlocks, blockSize>>>(N, x, y);
 
     cudaDeviceSynchronize();
 
     std::cout << y[0] << std::endl;
+
+    cudaFree(x);
+    cudaFree(y);
 
     return 0;
 }
