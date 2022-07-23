@@ -20,6 +20,16 @@ __global__ void vecAdd(int n, float *a, float *b, float *c) {
 }
 
 int main() {
+    // int nDevices;
+
+    // cudaGetDeviceCount(&nDevices);
+
+    // for (int k = 0; k < nDevices; k++) {
+    //     cudaDeviceProp prop;
+    //     cudaGetDeviceProperties(&prop, k);
+    //     std::cout << prop.name << std::endl;
+    // }
+
     int n = 1<<20;
     int blockSize = 512;
     int numBlocks = (n + blockSize - 1) / blockSize;
@@ -35,9 +45,9 @@ int main() {
 
     cudaDeviceSynchronize();
 
-    for (int i = 0; i < 256; i++) {
-        std::cout << c[i] << std::endl;
-    }
+    // for (int i = 0; i < 256; i++) {
+    //     std::cout << c[i] << std::endl;
+    // }
 
     return 0;
 
