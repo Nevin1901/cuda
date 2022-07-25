@@ -1,6 +1,7 @@
 #include <iostream>
 #include <X11/Xlib.h>
 #include <unistd.h>
+#include <math.h>
 
 #define HEIGHT 10
 #define WIDTH 30
@@ -10,6 +11,23 @@ __global__ void reset(char *screen) {
     int y = blockIdx.y * blockDim.y + threadIdx.y;
 
     screen[y * WIDTH + x] = '.';
+}
+
+
+__device__ float distance(int x1, int y1, int x2, int y2) {
+    return sqrt(pow(x2 - x1, 2) + pow(y2 - y1, 2));
+}
+
+__global__ void drawLine(char *screen, int x1, int y1, int x2, int y2) {
+    int x3 = blockIdx.x * blockDim.x + threadIdx.x;
+    int y3 = blockIdx.y * blockDim.y + threadIdx.y;
+
+    if (static_cast<int>(distance(x1, y1, x3, y3)) + static_cast<int>(distance(x2, y2, x3, y3)) == static_cast<int>(distance(x1, y1, x2, y2))) {
+        screen[y3 * WIDTH + x3] = '#';
+    }
+    
+    // if distance of ac + distance of bc == distance of ab it crosses through line
+    // distance = sqrt((x2 - x1)^2 + (y2 - y1)^2)
 }
 
 class Point2d {
@@ -43,6 +61,11 @@ class Screen2d {
         }
 
         void line(int x1, int y1, int x2, int y2) {
+            drawLine<<<numBlocks, blockSize>>>(screen, x1, y1, x2, y2);
+
+            cudaDeviceSynchronize();
+
+            std::cout << "drew line" << std::endl;
         }
 
         void print() {
