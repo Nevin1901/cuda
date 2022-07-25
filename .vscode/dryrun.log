@@ -1,0 +1,5 @@
+make --dry-run --always-make --keep-going --print-directory
+make: Entering directory '/home/nevin/Desktop/cuda'
+nvcc -g -G addArray.cu -L/usr/X11/lib -lX11 -lstdc++
+make: Leaving directory '/home/nevin/Desktop/cuda'
+ 

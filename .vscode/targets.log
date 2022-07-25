@@ -1,0 +1,376 @@
+make all --print-data-base --no-builtin-variables --no-builtin-rules --question
+# GNU Make 4.2.1
+# Built for x86_64-pc-linux-gnu
+# Copyright (C) 1988-2016 Free Software Foundation, Inc.
+# License GPLv3+: GNU GPL version 3 or later <http://gnu.org/licenses/gpl.html>
+# This is free software: you are free to change and redistribute it.
+# There is NO WARRANTY, to the extent permitted by law.
+
+# Make data base, printed on Mon Jul 25 18:56:11 2022
+
+# Variables
+
+# automatic
+<D = $(patsubst %/,%,$(dir $<))
+# automatic
+?F = $(notdir $?)
+# environment
+DESKTOP_SESSION = gnome
+# environment
+INFINALITY_FT_BRIGHTNESS = 0
+# default
+.SHELLFLAGS := -c
+# environment
+XDG_SESSION_CLASS = user
+# environment
+XDG_SESSION_TYPE = x11
+# environment
+INFINALITY_FT_BOLD_EMBOLDEN_Y_VALUE = 0
+# environment
+INFINALITY_FT_GLOBAL_EMBOLDEN_X_VALUE = 0
+# automatic
+?D = $(patsubst %/,%,$(dir $?))
+# automatic
+@D = $(patsubst %/,%,$(dir $@))
+# environment
+XAUTHORITY = /home/nevin/.Xauthority
+# environment
+GDMSESSION = gnome
+# environment
+XMODIFIERS = @im=ibus
+# automatic
+^D = $(patsubst %/,%,$(dir $^))
+# makefile
+CURDIR := /home/nevin/Desktop/cuda
+# makefile
+SHELL = /bin/sh
+# environment
+GDM_LANG = en_US
+# environment
+INFINALITY_FT_AUTOHINT_INCREASE_GLYPH_HEIGHTS = true
+# environment
+VSCODE_NLS_CONFIG = {"locale":"en-us","availableLanguages":{},"_languagePackSupport":true}
+# environment
+_ = /usr/bin/code
+# environment
+JOURNAL_STREAM = 8:52454
+# environment
+XDG_CONFIG_DIRS = /etc/xdg/xdg-gnome:/etc/xdg
+# environment
+KITTY_WINDOW_ID = 1
+# makefile (from 'makefile', line 1)
+MAKEFILE_LIST :=  makefile
+# automatic
+@F = $(notdir $@)
+# environment
+GIO_LAUNCHED_DESKTOP_FILE = /usr/share/applications/kitty.desktop
+# 'override' directive
+GNUMAKEFLAGS := 
+# environment
+MAKELEVEL := 0
+# environment
+MANDATORY_PATH = /usr/share/gconf/gnome.mandatory.path
+# environment
+XDG_DATA_DIRS = /usr/share/gnome:/usr/local/share:/usr/share:/var/lib/snapd/desktop
+# environment
+DBUS_SESSION_BUS_ADDRESS = unix:path=/run/user/1000/bus
+# environment
+MANAGERPID = 2100
+# environment
+LC_NAME = nl_NL.UTF-8
+# environment
+VSCODE_CWD = /home/nevin/Desktop/cuda
+# environment
+INFINALITY_FT_USE_KNOWN_SETTINGS_ON_SELECTED_FONTS = true
+# environment
+PAM_KWALLET5_LOGIN = /run/user/1000/kwallet5.socket
+# environment
+XDG_SESSION_PATH = /org/freedesktop/DisplayManager/Session0
+# default
+MAKE_HOST := x86_64-pc-linux-gnu
+# environment
+PATH = /home/nevin/.pyenv/shims:/home/nevin/.pyenv/plugins/pyenv-virtualenv/shims:/home/nevin/.pyenv/bin:/home/nevin/.cargo/bin:/home/nevin/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/home/nevin/.dotnet/tools:/usr/local/go/bin:/home/nevin/go/bin:/home/nevin/Android/Sdk/emulator:/home/nevin/Android/Sdk/tools:/home/nevin/Android/Sdk/tools/bin:/home/nevin/Android/Sdk/platform-tools:/home/nevin/.local/bin:/home/nevin/.yarn/bin:/home/nevin/.local/lib/python3.8/site-packages:/usr/local/cuda-11.7/bin
+# environment
+INFINALITY_FT_STEM_SNAPPING_SLIDING_SCALE = 40
+# environment
+INFINALITY_FT_FRINGE_FILTER_STRENGTH = 0
+# environment
+GPG_AGENT_INFO = /run/user/1000/gnupg/S.gpg-agent:0:1
+# environment
+GJS_DEBUG_OUTPUT = stderr
+# environment
+LSCOLORS = Gxfxcxdxbxegedabagacad
+# environment
+SESSION_MANAGER = local/nevin-MS-7A72:@/tmp/.ICE-unix/2369,unix/nevin-MS-7A72:/tmp/.ICE-unix/2369
+# environment
+XDG_RUNTIME_DIR = /run/user/1000
+# environment
+INFINALITY_FT_BOLD_EMBOLDEN_X_VALUE = 0
+# environment
+WINDOWID = 52428811
+# environment
+GOPATH = /home/nevin/go
+# environment
+INFINALITY_FT_AUTOHINT_VERTICAL_STEM_DARKEN_STRENGTH = 25
+# environment
+XDG_MENU_PREFIX = gnome-
+# environment
+ELECTRON_RUN_AS_NODE = 1
+# environment
+PYENV_ROOT = /home/nevin/.pyenv
+# environment
+INVOCATION_ID = 4e24ed62a0544ddf91d63b8780000878
+# environment
+ANDROID_HOME = /home/nevin/Android/Sdk
+# default
+.FEATURES := target-specific order-only second-expansion else-if shortest-stem undefine oneshell archives jobserver output-sync check-symlink load
+# environment
+ELECTRON_NO_ATTACH_CONSOLE = 1
+# environment
+XDG_GREETER_DATA_DIR = /var/lib/lightdm-data/nevin
+# environment
+LS_COLORS = rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:
+# environment
+XDG_SESSION_DESKTOP = gnome
+# environment
+SSH_AUTH_SOCK = /run/user/1000/keyring/ssh
+# environment
+GIO_LAUNCHED_DESKTOP_FILE_PID = 3626
+# automatic
+%F = $(notdir $%)
+# environment
+DISPLAY = :0
+# environment
+INFINALITY_FT_USE_VARIOUS_TWEAKS = true
+# environment
+PWD = /home/nevin/Desktop/cuda
+# default
+.LOADED := 
+# environment
+SSH_AGENT_PID = 2332
+# environment
+ORIGINAL_XDG_CURRENT_DESKTOP = GNOME
+# environment
+GTK_MODULES = gail:atk-bridge:appmenu-gtk-module
+# environment
+VSCODE_AMD_ENTRYPOINT = vs/workbench/api/node/extensionHostProcess
+# environment
+PYENV_SHELL = zsh
+# environment
+HOME = /home/nevin
+# environment
+LD_LIBRARY_PATH = :/home/nevin/.mujoco/mjpro150/bin
+# environment
+INFINALITY_FT_CHROMEOS_STYLE_SHARPENING_STRENGTH = 0
+# environment
+LC_MEASUREMENT = nl_NL.UTF-8
+# environment
+VSCODE_CLI = 1
+# environment
+VSCODE_CODE_CACHE_PATH = /home/nevin/.config/Code/CachedData/92d25e35d9bf1a6b16f7d0758f25d48ace11e5b9
+# environment
+LOGNAME = nevin
+# environment
+APPLICATION_INSIGHTS_NO_DIAGNOSTIC_CHANNEL = 1
+# automatic
++F = $(notdir $+)
+# environment
+ZSH = /home/nevin/.oh-my-zsh
+# environment
+VSCODE_HANDLES_UNCAUGHT_ERRORS = true
+# environment
+GNOME_DESKTOP_SESSION_ID = this-is-deprecated
+# environment
+INFINALITY_FT_CONTRAST = 0
+# environment
+LC_TIME = nl_NL.UTF-8
+# environment
+COLORTERM = truecolor
+# default
+MAKE = $(MAKE_COMMAND)
+# environment
+INFINALITY_FT_FILTER_PARAMS = 11 22 38 22 11
+# default
+MAKECMDGOALS := all
+# environment
+QT_IM_MODULE = ibus
+# environment
+SHLVL = 1
+# environment
+IM_CONFIG_PHASE = 1
+# default
+MAKE_VERSION := 4.2.1
+# environment
+USER = nevin
+# environment
+LC_MONETARY = nl_NL.UTF-8
+# makefile
+.DEFAULT_GOAL := a
+# environment
+XDG_CURRENT_DESKTOP = GNOME
+# environment
+LIBVIRT_DEFAULT_URI = qemu:///system
+# environment
+LESS = -R
+# automatic
+%D = $(patsubst %/,%,$(dir $%))
+# environment
+LC_TELEPHONE = nl_NL.UTF-8
+# environment
+INFINALITY_FT_STEM_ALIGNMENT_STRENGTH = 25
+# default
+MAKE_COMMAND := make
+# environment
+OLDPWD = /home/nevin/Desktop
+# default
+.VARIABLES := 
+# environment
+AWT_TOOLKIT = MToolkit
+# automatic
+*F = $(notdir $*)
+# environment
+LANGUAGE = en_US
+# environment
+XDG_SEAT_PATH = /org/freedesktop/DisplayManager/Seat0
+# environment
+VSCODE_IPC_HOOK = /run/user/1000/vscode-2ddc1e11-1.69.0-main.sock
+# makefile
+MAKEFLAGS = pqrR
+# environment
+MFLAGS = -pqrR
+# automatic
+*D = $(patsubst %/,%,$(dir $*))
+# automatic
++D = $(patsubst %/,%,$(dir $+))
+# environment
+INFINALITY_FT_GRAYSCALE_FILTER_STRENGTH = 0
+# environment
+GDK_BACKEND = x11
+# environment
+LC_PAPER = nl_NL.UTF-8
+# environment
+QT_ACCESSIBILITY = 1
+# environment
+DEFAULTS_PATH = /usr/share/gconf/gnome.default.path
+# environment
+INFINALITY_FT_GLOBAL_EMBOLDEN_Y_VALUE = 0
+# default
+MAKEFILES := 
+# environment
+LC_NUMERIC = en_US.UTF-8
+# environment
+OPENPILOT_ENV = 1
+# automatic
+<F = $(notdir $<)
+# environment
+INFINALITY_FT_WINDOWS_STYLE_SHARPENING_STRENGTH = 10
+# environment
+PAGER = less
+# environment
+LC_ALL = C
+# environment
+INFINALITY_FT_STEM_FITTING_STRENGTH = 25
+# environment
+_JAVA_AWT_WM_NONREPARENTING = 1
+# environment
+GJS_DEBUG_TOPICS = JS ERROR;JS LOG
+# automatic
+^F = $(notdir $^)
+# environment
+INFINALITY_FT_AUTOHINT_HORIZONTAL_STEM_DARKEN_STRENGTH = 10
+# default
+SUFFIXES := 
+# environment
+CHROME_DESKTOP = code-url-handler.desktop
+# environment
+INFINALITY_FT_AUTOHINT_SNAP_STEM_HEIGHT = 100
+# environment
+PYENV_VIRTUALENV_INIT = 1
+# default
+.INCLUDE_DIRS = /usr/include /usr/local/include /usr/include
+# environment
+ 
+make: *** No rule to make target 'all'.  Stop.
+
+LC_IDENTIFICATION = nl_NL.UTF-8
+# default
+.RECIPEPREFIX := 
+# environment
+LC_ADDRESS = nl_NL.UTF-8
+# environment
+INFINALITY_FT_GAMMA_CORRECTION = 0 100
+# environment
+LANG = C
+# environment
+TERM = xterm-kitty
+# environment
+VSCODE_PID = 4985
+# variable set hash-table stats:
+# Load=146/1024=14%, Rehash=0, Collisions=19/171=11%
+
+# Pattern-specific Variable Values
+
+# No pattern-specific variable values.
+
+# Directories
+
+# . (device 2082, inode 1688907): 10 files, no impossibilities.
+
+# 10 files, no impossibilities in 1 directories.
+
+# Implicit Rules
+
+# No implicit rules.
+
+# Files
+
+a: addArray.cu
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+#  recipe to execute (from 'makefile', line 2):
+	nvcc -g -G addArray.cu -L/usr/X11/lib -lX11 -lstdc++
+
+# Not a target:
+all:
+#  Command line target.
+#  Implicit rule search has been done.
+#  File does not exist.
+#  File has not been updated.
+
+# Not a target:
+addArray.cu:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+# Not a target:
+makefile:
+#  Implicit rule search has been done.
+#  Last modified 2022-07-23 20:09:41.410174654
+#  File has been updated.
+#  Successfully updated.
+
+# Not a target:
+.DEFAULT:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+# files hash-table stats:
+# Load=6/1024=1%, Rehash=0, Collisions=0/17=0%
+# VPATH Search Paths
+
+# No 'vpath' search paths.
+
+# No general ('VPATH' variable) search path.
+
+# strcache buffers: 1 (0) / strings = 16 / storage = 129 B / avg = 8 B
+# current buf: size = 8162 B / used = 129 B / count = 16 / avg = 8 B
+
+# strcache performance: lookups = 22 / hit rate = 27%
+# hash-table stats:
+# Load=16/8192=0%, Rehash=0, Collisions=1/22=5%
+# Finished Make data base on Mon Jul 25 18:56:11 2022
+
+ 
