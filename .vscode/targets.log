@@ -1,4 +1,6 @@
 make all --print-data-base --no-builtin-variables --no-builtin-rules --question
+make: *** No rule to make target 'all'.  Stop.
+
 # GNU Make 4.2.1
 # Built for x86_64-pc-linux-gnu
 # Copyright (C) 1988-2016 Free Software Foundation, Inc.
@@ -6,7 +8,7 @@ make all --print-data-base --no-builtin-variables --no-builtin-rules --question
 # This is free software: you are free to change and redistribute it.
 # There is NO WARRANTY, to the extent permitted by law.
 
-# Make data base, printed on Mon Jul 25 18:56:11 2022
+# Make data base, printed on Tue Jul 26 15:24:50 2022
 
 # Variables
 
@@ -51,19 +53,17 @@ INFINALITY_FT_AUTOHINT_INCREASE_GLYPH_HEIGHTS = true
 # environment
 VSCODE_NLS_CONFIG = {"locale":"en-us","availableLanguages":{},"_languagePackSupport":true}
 # environment
-_ = /usr/bin/code
+_ = /usr/share/code/code
 # environment
-JOURNAL_STREAM = 8:52454
+JOURNAL_STREAM = 8:43869
 # environment
 XDG_CONFIG_DIRS = /etc/xdg/xdg-gnome:/etc/xdg
-# environment
-KITTY_WINDOW_ID = 1
 # makefile (from 'makefile', line 1)
 MAKEFILE_LIST :=  makefile
 # automatic
 @F = $(notdir $@)
 # environment
-GIO_LAUNCHED_DESKTOP_FILE = /usr/share/applications/kitty.desktop
+GIO_LAUNCHED_DESKTOP_FILE = /usr/share/applications/code.desktop
 # 'override' directive
 GNUMAKEFLAGS := 
 # environment
@@ -75,11 +75,11 @@ XDG_DATA_DIRS = /usr/share/gnome:/usr/local/share:/usr/share:/var/lib/snapd/desk
 # environment
 DBUS_SESSION_BUS_ADDRESS = unix:path=/run/user/1000/bus
 # environment
-MANAGERPID = 2100
+MANAGERPID = 2087
 # environment
 LC_NAME = nl_NL.UTF-8
 # environment
-VSCODE_CWD = /home/nevin/Desktop/cuda
+VSCODE_CWD = /home/nevin
 # environment
 INFINALITY_FT_USE_KNOWN_SETTINGS_ON_SELECTED_FONTS = true
 # environment
@@ -101,13 +101,11 @@ GJS_DEBUG_OUTPUT = stderr
 # environment
 LSCOLORS = Gxfxcxdxbxegedabagacad
 # environment
-SESSION_MANAGER = local/nevin-MS-7A72:@/tmp/.ICE-unix/2369,unix/nevin-MS-7A72:/tmp/.ICE-unix/2369
+SESSION_MANAGER = local/nevin-MS-7A72:@/tmp/.ICE-unix/2360,unix/nevin-MS-7A72:/tmp/.ICE-unix/2360
 # environment
 XDG_RUNTIME_DIR = /run/user/1000
 # environment
 INFINALITY_FT_BOLD_EMBOLDEN_X_VALUE = 0
-# environment
-WINDOWID = 52428811
 # environment
 GOPATH = /home/nevin/go
 # environment
@@ -119,23 +117,21 @@ ELECTRON_RUN_AS_NODE = 1
 # environment
 PYENV_ROOT = /home/nevin/.pyenv
 # environment
-INVOCATION_ID = 4e24ed62a0544ddf91d63b8780000878
+INVOCATION_ID = d1171a600132464a93c591ce400528da
 # environment
 ANDROID_HOME = /home/nevin/Android/Sdk
 # default
 .FEATURES := target-specific order-only second-expansion else-if shortest-stem undefine oneshell archives jobserver output-sync check-symlink load
 # environment
-ELECTRON_NO_ATTACH_CONSOLE = 1
-# environment
 XDG_GREETER_DATA_DIR = /var/lib/lightdm-data/nevin
 # environment
-LS_COLORS = rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:
+LS_COLORS = 
 # environment
 XDG_SESSION_DESKTOP = gnome
 # environment
 SSH_AUTH_SOCK = /run/user/1000/keyring/ssh
 # environment
-GIO_LAUNCHED_DESKTOP_FILE_PID = 3626
+GIO_LAUNCHED_DESKTOP_FILE_PID = 8697
 # automatic
 %F = $(notdir $%)
 # environment
@@ -147,7 +143,7 @@ PWD = /home/nevin/Desktop/cuda
 # default
 .LOADED := 
 # environment
-SSH_AGENT_PID = 2332
+SSH_AGENT_PID = 2317
 # environment
 ORIGINAL_XDG_CURRENT_DESKTOP = GNOME
 # environment
@@ -164,8 +160,6 @@ LD_LIBRARY_PATH = :/home/nevin/.mujoco/mjpro150/bin
 INFINALITY_FT_CHROMEOS_STYLE_SHARPENING_STRENGTH = 0
 # environment
 LC_MEASUREMENT = nl_NL.UTF-8
-# environment
-VSCODE_CLI = 1
 # environment
 VSCODE_CODE_CACHE_PATH = /home/nevin/.config/Code/CachedData/92d25e35d9bf1a6b16f7d0758f25d48ace11e5b9
 # environment
@@ -184,8 +178,6 @@ GNOME_DESKTOP_SESSION_ID = this-is-deprecated
 INFINALITY_FT_CONTRAST = 0
 # environment
 LC_TIME = nl_NL.UTF-8
-# environment
-COLORTERM = truecolor
 # default
 MAKE = $(MAKE_COMMAND)
 # environment
@@ -195,7 +187,7 @@ MAKECMDGOALS := all
 # environment
 QT_IM_MODULE = ibus
 # environment
-SHLVL = 1
+SHLVL = 0
 # environment
 IM_CONFIG_PHASE = 1
 # default
@@ -221,7 +213,7 @@ INFINALITY_FT_STEM_ALIGNMENT_STRENGTH = 25
 # default
 MAKE_COMMAND := make
 # environment
-OLDPWD = /home/nevin/Desktop
+OLDPWD = /home/nevin
 # default
 .VARIABLES := 
 # environment
@@ -289,9 +281,6 @@ PYENV_VIRTUALENV_INIT = 1
 # default
 .INCLUDE_DIRS = /usr/include /usr/local/include /usr/include
 # environment
- 
-make: *** No rule to make target 'all'.  Stop.
-
 LC_IDENTIFICATION = nl_NL.UTF-8
 # default
 .RECIPEPREFIX := 
@@ -302,11 +291,10 @@ INFINALITY_FT_GAMMA_CORRECTION = 0 100
 # environment
 LANG = C
 # environment
-TERM = xterm-kitty
-# environment
-VSCODE_PID = 4985
+VSCODE_PID = 8697
 # variable set hash-table stats:
-# Load=146/1024=14%, Rehash=0, Collisions=19/171=11%
+ 
+# Load=140/1024=14%, Rehash=0, Collisions=15/165=9%
 
 # Pattern-specific Variable Values
 
@@ -371,6 +359,6 @@ makefile:
 # strcache performance: lookups = 22 / hit rate = 27%
 # hash-table stats:
 # Load=16/8192=0%, Rehash=0, Collisions=1/22=5%
-# Finished Make data base on Mon Jul 25 18:56:11 2022
+# Finished Make data base on Tue Jul 26 15:24:50 2022
 
  

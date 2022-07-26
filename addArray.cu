@@ -15,14 +15,19 @@ __global__ void reset(char *screen) {
 
 
 __device__ float distance(int x1, int y1, int x2, int y2) {
-    return sqrt(pow(x2 - x1, 2) + pow(y2 - y1, 2));
+    float x = pow((x2 - x1), 2);
+    float y = pow((y2 - y1), 2);
+
+    return sqrt(x + y);
 }
 
 __global__ void drawLine(char *screen, int x1, int y1, int x2, int y2) {
     int x3 = blockIdx.x * blockDim.x + threadIdx.x;
     int y3 = blockIdx.y * blockDim.y + threadIdx.y;
 
-    if (static_cast<int>(distance(x1, y1, x3, y3)) + static_cast<int>(distance(x2, y2, x3, y3)) == static_cast<int>(distance(x1, y1, x2, y2))) {
+    // printf("%i\n", static_cast<int>(distance(x1, y1, x3, y3)));
+
+    if (distance(x1, y1, x3, y3) + distance(x2, y2, x3, y3) == distance(x1, y1, x2, y2)) {
         screen[y3 * WIDTH + x3] = '#';
     }
     
@@ -112,7 +117,7 @@ __global__ void vecAdd(int n, float *a, float *b, float *c) {
 int main() {
     Screen2d screen(WIDTH, HEIGHT);
     screen.drawBase();
-    screen.line(0, 0, 15, 5);
+    screen.line(1, 1, 3, 3);
     screen.print();
     // char *screen = (char*)malloc(HEIGHT * WIDTH * sizeof(int));
 
