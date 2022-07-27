@@ -27,7 +27,12 @@ __global__ void drawLine(char *screen, int x1, int y1, int x2, int y2) {
 
     // printf("%i\n", static_cast<int>(distance(x1, y1, x3, y3)));
 
+    // printf("%i\n", static_cast<int>(distance(x1, y1, x3, y3)));
+    // printf("%i\n", static_cast<int>(distance(x2, y2, x3, y3)));
+    // printf("%i\n", static_cast<int>(distance(x1, y1, x2, y2)));
+
     if (distance(x1, y1, x3, y3) + distance(x2, y2, x3, y3) == distance(x1, y1, x2, y2)) {
+        printf("distance is good");
         screen[y3 * WIDTH + x3] = '#';
     }
     
